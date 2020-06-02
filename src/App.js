@@ -1,12 +1,15 @@
 import React from 'react';
-import './App.css';
+import Particles from 'react-particles-js';
+import './App.css'
 
+
+const particleConfig = require('./particlesjs-config.json')
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">Coming Soon!</header>
-    </div>
+      <div className="App">
+        <Particles className="particle-canvas" params={particleConfig}/>
+      </div>
   );
 }
 
